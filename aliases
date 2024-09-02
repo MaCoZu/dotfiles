@@ -1,9 +1,54 @@
+
+# refresh shell with:
+# source ~/.zshrc
+# after every change
+
+# code
+alias code="cd ~/code/MaCoZu && code ."
+
+
+
 # Get External IP / Internet Speed
 alias myip="curl https://ipinfo.io/json" # or /ip for plain-text ip
 alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
-# Quickly serve the current directory as HTTP
-alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
 # NOTE: On Q3 2021, Le Wagon decided to change the Web Dev curriculum default text editor
 alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' && code ."
+
+# open config files
+alias zshconfig="nano ~/.zshrc"
+alias zshalias="nano ~/.aliases"
+alias sourz="source ~/.zshrc"
+
+# i for interactive ask before remove, copy and move
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# alias update
+alias up="sudo apt-get update && sudo apt-get full-upgrade -y && sudo apt-get autoremove"
+
+# git aliases
+alias ga="git add"
+alias gp="git push origin main"
+alias gc="git commit -m"
+alias gst="git status"
+
+# pyenv
+alias pvv="pyenv virtualenv"
+alias pvs="pyenv virtualenvs"
+alias pa="pyenv activate"
+alias pd="pyenv deactivate"
+alias pyversions="pyenv versions"
+
+# micromamba
+alias mm='micromamba'
+alias mma='mm activate'
+alias mmc='mm create -n'
+alias mmd='mm deactivate'
+alias mmel="mm env list"
+alias mmer="mm -env remove -n"
+alias mml="mm list"
+
+alias mmer="mmenv remove-n"

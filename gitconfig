@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-  editor = code --wait
+	editor = code -w
 
 [alias]
   co = checkout
@@ -61,4 +61,4 @@
   defaultBranch = master
 [user]
 	email = marcoz@posteo.de
-	name = mz
+	name = MaCoZu
