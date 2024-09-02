@@ -52,3 +52,4 @@ alias mmer="mm -env remove -n"
 alias mml="mm list"
 
 alias mmer="mmenv remove-n"
+alias rzi="rm -rf **/*Zone.Identifier"
